@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    MyInputActions inputActions;
+
+    private void Awake()
+    {
+        inputActions = new MyInputActions();
+    }
     void Start()
     {
         

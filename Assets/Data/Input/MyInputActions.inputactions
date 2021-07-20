@@ -1,0 +1,79 @@
+{
+    "name": "MyInputActions",
+    "maps": [
+        {
+            "name": "Gameplay",
+            "id": "8ad20b47-d162-41c8-b332-638cd3c54143",
+            "actions": [
+                {
+                    "name": "MoveLeft",
+                    "type": "Button",
+                    "id": "590aa159-9186-4954-85a9-cfc3b2eb22a1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "MoveRight",
+                    "type": "Button",
+                    "id": "4defe801-cbe2-41f3-9b50-aa944327e0de",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "7742fe04-d041-4069-8a85-2372b6d2bd14",
+                    "path": "<Keyboard>/a",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "420234f4-84a1-425d-96e1-fc9017a84517",
+                    "path": "<Keyboard>/d",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "UI",
+            "id": "5b4dba5d-1bc2-4b99-95db-4e2c9638c33e",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "a0604791-1b5b-4d35-8885-180a2603ab3c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "988e7d61-2335-498f-9692-dcfd9cc4cfbb",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
