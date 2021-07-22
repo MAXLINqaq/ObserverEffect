@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     MyInputActions inputActions;
     public  Rigidbody2D rb;
+    public  Animator anim;
     public float speed;
 
     private void Awake()
@@ -31,8 +32,9 @@ public class PlayerController : MonoBehaviour
         rb.velocity = speed * obj.ReadValue<Vector2>();
         if (obj.ReadValue<Vector2>().x != 0)
         {
-            transform.localScale = new Vector3(obj.ReadValue<Vector2>().x, transform.localScale.y, transform.localScale.z);
+            transform.localScale = new Vector3(obj.ReadValue<Vector2>().x, transform.localScale.y, transform.localScale.z);   
         }
+        anim.SetFloat("velocity", Mathf.Abs(obj.ReadValue<Vector2>().x));
     }
 
     private void OnDisable()
